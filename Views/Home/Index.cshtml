@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-home.css">
+    <link rel="icon" href="~/img/ecocriaimg.png">
+    <script src="~/js/buttons.js"></script>
+
+   
+</head>
+
+<body>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+              <img src="~/img/ColetaSeletiva.png" alt="Slide 1">
+              <img src="~/img/CuidarAmbiente1.png" alt="Slide 2">
+              <img src="~/img/LixoZero1.png" alt="Slide 3">
+              <img src="~/img/Reciclagem1.png" alt="Slide 4">
+              <img src="~/img/whats3.jpeg" alt="Slide 5">
+            </div>
+          
+            <div class="carousel-controls">
+              <button id="prevBtn">&#10094;</button>
+              <button id="nextBtn">&#10095;</button>
+            </div>
+          
+            <div class="carousel-indicators" id="carouselIndicators">
+              <button data-slide="0" class="active"></button>
+              <button data-slide="1"></button>
+              <button data-slide="2"></button>
+              <button data-slide="3"></button>
+              <button data-slide="4"></button>
+            </div>
+          </div>
+          
+          <hr style="border: 3px solid #045002;"> 
+          <section class="intro-section">
+            
+        <!-- Seção de Escolha de Material -->
+            <div class="discard-section" >
+              <h2>QUER DESCARTAR?</h2>
+              <div class="discard-form">
+                  <div class="input-group">
+                      <span>CEP</span>
+                      <input type="text" placeholder="____-___">
+                  </div>
+                  <div class="input-group">
+                      <span>Produto</span>
+                      <select>
+                          <option disabled selected>Selecione o produto</option>
+                          <option value="Alumínio">Alumínio</option>
+                          <option value="Plástico">Plástico</option>
+                          <option value="Metal">Metal</option>
+                          <option value="Vidro">Vidro</option>
+                          <option value="Papel">Papel</option>
+                          <option value="Alumínio">Alumínio</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+        </section>
+       
+        <hr style="border: 3px solid #045002;">
+
+        <div class="container">
+          <h2>Escolha o tipo de material que deseja reciclar</h2>
+          <div class="materials">
+              <div class="material">
+                  <img src="~/img/papel.png" alt="Papel">
+                  <span>PAPEL</span>
+              </div>
+              <div class="material">
+                  <img src="~/img/plastico.png" alt="Plástico">
+                  <span>PLÁSTICO</span>
+              </div>
+              <div class="material">
+                  <img src="~/img/metal.png" alt="Metal">
+                  <span>METAL</span>
+              </div>
+              <div class="material">
+                  <img src="~/img/oleo.png" alt="Óleo">
+                  <span>ÓLEO</span>
+              </div>
+              <div class="material">
+                  <img src="~/img/vidro.png" alt="Vidro">
+                  <span>VIDRO</span>
+              </div>
+              <div class="material">
+                  <img src="~/img/aluminio.png" alt="Alumínio">
+                  <span>ALUMÍNIO</span>
+              </div>
+          </div>
+      </div>
+
+    </main>
+
+    <script src="~/js/index.js"></script>
+</body>
+
+</html>

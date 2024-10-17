@@ -1,0 +1,101 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+*[b-a4n38zlinf] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body[b-a4n38zlinf] {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body tenha no mínimo a altura da janela*/
+}
+
+.content[b-a4n38zlinf] {
+  flex: 1; /* Faz o conteúdo ocupar o máximo de espaço possível */
+  padding: 20px;
+}
+
+.container[b-a4n38zlinf] {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  }
+
+header[b-a4n38zlinf] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo[b-a4n38zlinf] {
+  display: flex;
+  align-items: center;
+  width: 10px;
+}
+
+.logo img[b-a4n38zlinf] {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span[b-a4n38zlinf] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #60c659;
+}
+
+.social-media a[b-a4n38zlinf] {
+  margin-left: 15px;
+}
+
+.social-media img[b-a4n38zlinf] {
+  width: 20px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.social-media img:hover[b-a4n38zlinf] {
+  filter: grayscale(0%);
+}
+
+
+
+.footer[b-a4n38zlinf] {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Add some padding */
+  font-family: Arial, sans-serif; /* Set a font */
+  font-size: 14px; /* Set the font size */
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75); /* Adding shadow effect */
+  position: relative;
+}
+
+.footer p[b-a4n38zlinf] {
+  margin: 0;
+}
+
+.footer a[b-a4n38zlinf] {
+  color: #00aeef; /* Blue color for links */
+  text-decoration: none;
+}
+
+.footer a:hover[b-a4n38zlinf] {
+  text-decoration: underline;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Ecocria</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EcocriaMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css">
+    <link rel="stylesheet" href="~/css/sobre.css">
+    <link rel="stylesheet" href="~/css.pontos.css">
+</head>
+
+<body>
+    <header>
+            <div class="logo">
+                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/ecocriaimg.png" alt="Eco Logo"></a>
+            </div>
+                <nav>
+                    <ul >
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a href="@Url.Action("Sobre", "Home")">Sobre</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Pontos">Pontos de Recebimento</a></li>
+                        <li><a asp-area="" asp-controller="Usuarios" asp-action="Index">Registrar-se</a></li>
+                        <li><a asp-area="" asp-controller="Usuarios" asp-action="IndexLogin">Login</a></li>
+                    </ul>
+                </nav>
+        <div class="social-media">
+            <a href="#"><img src="~/img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="~/img/facebook.png" alt="Facebook"></a> 
+            <a href="#"><img src="~/img/instagram.png" alt="Instagram"></a> 
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+<footer class="footer">
+    <p>&copy; EcoCria - Desenvolvido por grupo TCC 2024 3-DS</p>
+</footer>
+
+</html>
