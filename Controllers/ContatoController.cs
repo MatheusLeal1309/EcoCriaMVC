@@ -13,7 +13,7 @@ namespace EcocriaMVC.Controllers
 {
     public class ContatoController : Controller
     {
-        public string uriBase = "http://www.ecocria.somee.com/EcoCria/Contato";
+        public string uriBase = "http://www.ecocria.somee.com/EcoCria/Contato/";
 
         [HttpPost]
         public async Task<IActionResult> EnviarAsync(ContatoViewModel contato)
@@ -22,7 +22,7 @@ namespace EcocriaMVC.Controllers
             {
                 using (HttpClient httpClient = new HttpClient())
                 {
-                    string uriComplementar = "EnviarAsync";
+                    string uriComplementar = "Enviar";
 
                     var content = new StringContent(JsonConvert.SerializeObject(contato));
                     content.Headers.ContentType = new MediaTypeHeaderValue("application/json");

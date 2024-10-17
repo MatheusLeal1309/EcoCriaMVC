@@ -34,3 +34,4 @@ C:\Users\Matheus\OneDrive\Documentos\ETEC\3°SEM\TCC\EcocriaMVC\obj\Debug\net8.0
 C:\Users\Matheus\OneDrive\Documentos\ETEC\3°SEM\TCC\EcocriaMVC\obj\Debug\net8.0\EcocriaMVC.pdb
 C:\Users\Matheus\OneDrive\Documentos\ETEC\3°SEM\TCC\EcocriaMVC\obj\Debug\net8.0\EcocriaMVC.genruntimeconfig.cache
 C:\Users\Matheus\OneDrive\Documentos\ETEC\3°SEM\TCC\EcocriaMVC\obj\Debug\net8.0\ref\EcocriaMVC.dll
+C:\Users\Matheus\OneDrive\Documentos\ETEC\3°SEM\TCC\EcocriaMVC\obj\Debug\net8.0\EcocriaMVC.sourcelink.json
