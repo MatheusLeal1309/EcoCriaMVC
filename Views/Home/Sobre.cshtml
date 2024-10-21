@@ -151,67 +151,45 @@
     @Html.AntiForgeryToken()
     
     <div class="input-group">
-        <label for="nome">Nome*</label>
-        <div class="col-md-6">
+        <label class="inputnome" for="nome">Nome*</label>
             @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
-        </div>
     </div>
 
     <div class="input-group">
-        <label for="email">Email*</label>
-        <div class="col-md-6">
+        <label class="inputemail"  for="email">Email*</label>
             @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
-        </div>
     </div>
 
     <div class="input-group">
-        <label for="telefone">Telefone / Celular*</label>
-        <div class="col-md-6">
+        <label class="inputcelular"  for="telefone">Celular*</label>
             @Html.EditorFor(model => model.Telefone, new { htmlAttributes = new { @class = "form-control", @type = "tel", @required = "required" } })
-        </div>
     </div>
 
     <div class="input-group">
-        <label for="cidade">Cidade*</label>
-        <div class="col-md-6">
+        <label class="inputcidade"  for="cidade">Cidade*</label>
             @Html.EditorFor(model => model.Cidade, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
-        </div>
     </div>
 
 <div class="input-group">
-    <label class="control-label col-md-2" for="uf">UF*</label>
-    <div class="col-md-6">
-        @Html.DropDownListFor(model => model.UF,
-            Html.GetEnumSelectList(typeof(EcocriaMVC.Models.Enum.UfEnum)),
-            "---Selecione---", new { @class = "form-control", @required = "required" })
-    </div>
+    <label class="inputuf"  class="select" for="uf">UF*</label>
+        @Html.DropDownListFor(model => model.UF, Html.GetEnumSelectList(typeof(EcocriaMVC.Models.Enum.UfEnum)),
+        "-----Selecione-----", new { @class = "form-control", @required = "required" })
 </div>
 
 <div class="input-group">
-    <label class="control-label col-md-2" for="assunto">Assunto*</label>
-    <div class="col-md-6">
-        @Html.DropDownListFor(model => model.Assunto,
-            Html.GetEnumSelectList(typeof(EcocriaMVC.Models.Enum.AssuntoEnum)),
-            "---Selecione---", new { @class = "form-control", @required = "required" })
-    </div>
+    <label class="inputassunto"  for="assunto">Assunto*</label>
+        @Html.DropDownListFor(model => model.Assunto, Html.GetEnumSelectList(typeof(EcocriaMVC.Models.Enum.AssuntoEnum)),
+        "-----Selecione-----", new { @class = "form-control", @required = "required" })
 </div>
 
-
     <div class="input-group">
-        <label class="control-label col-md-2" for="mensagem">Mensagem*</label>
-        <div class="col-md-6">
-            @Html.TextAreaFor(model => model.Mensagem, new { @class = "form-control", rows = 4, @required = "required" })
-        </div>
+        <label class="inputmensagem"  for="mensagem">Mensagem*</label>
+          @Html.TextAreaFor(model => model.Mensagem, new { @class = "form-control", rows = 4, @required = "required" })
     </div>
 
-    <div class="input-group">
-        <div class="col-md-offset-2 col-md-6">
-            <button type="submit" class="submit-button">ENVIAR</button>
-        </div>
-    </div>
+        <button type="submit" class="submit-button">ENVIAR</button>
 }
-
-      </div>
+</div>
 
       <div class="contact-image">
         <img src="~/img/imagem-smartphone.png.png" alt="Imagem de smartphone com o site EcoCria" />

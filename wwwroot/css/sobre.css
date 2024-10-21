@@ -1,21 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
-    height: 100%;
-    min-height: 100vh;
-
-  
-}
-
-
 main {
-
     background-color: #fff;
     flex: 1;
 }
@@ -73,7 +56,6 @@ main {
     text-align: justify;
     font-weight: bold; /* Aplica o negrito */
 }
-
 
 
 .mission-vision-values {
@@ -171,9 +153,7 @@ main {
     margin-bottom: 5px;
 }
 
-.input-group input,
-.input-group select,
-.input-group textarea {
+.form-control {
     width: 100%; /* Altera a largura para 100% do espaço do grupo */
     max-width: 400px; /* Define uma largura máxima para inputs */
     padding: 10px;
@@ -184,9 +164,7 @@ main {
     margin: 0 auto; /* Centraliza o input dentro do grupo */
 }
 
-.input-group input:focus,
-.input-group select:focus,
-.input-group textarea:focus {
+.form-control {
     border-color: #77c043;
     outline: none;
 }
@@ -218,6 +196,22 @@ main {
     display: flex;
     justify-content: center;
     
+}
+
+.inputnome{
+    padding: 10px;
+}
+.inputemail{
+    padding: 12px;
+}
+.inputcelular{
+    padding: 5px;
+}
+.inputcidade{
+    padding: 4px;
+}
+.inputuf{
+    padding: 20px;
 }
 
 

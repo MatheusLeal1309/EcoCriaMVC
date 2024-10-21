@@ -225,6 +225,16 @@ h2 {
   position: relative;
 }
 
+.material a{
+  color: #313131;
+  text-decoration: none;
+}
+
+.material a:hover{
+  color: #8cc63f;
+  text-decoration: none;
+}
+
 .material input {
   display: none; /* Esconde o radio button */
 }
@@ -246,14 +256,38 @@ h2 {
 }
 
 .material:hover img {
-  border: 5px solid #006eff; /* Borda azul ao passar o mouse */
+  border: 5px solid #8aee63a2; /* Borda azul ao passar o mouse */
 }
 
-/* Quando o input estiver selecionado, a borda ficará azul */
+/* Quando o input estiver selecionado, a borda ficará verde */
 .material input:checked + img {
-  border: 5px solid #006eff;
-}
-
+  border: 5px solid #8aee63a2;
+  }
+  
+  
+  /* Descricão dos materiais */
+  
+  .objective-text, .description {
+    font-family: 'Inter', sans-serif;
+    color: #313131;
+    font-size: 1.1rem;
+    text-align: start;
+    font-weight: bold; /* Aplica o negrito */
+  }
+  
+  h1{
+    color: #1e6403;
+  }
+  
+  strong, h3{
+    color: #1e6403;
+    text-align: start ;
+  }
+  
+  .img-materiais{
+    width: 500px;
+  }
+  
 
 
 
